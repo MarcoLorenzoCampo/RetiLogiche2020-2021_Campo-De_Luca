@@ -5,7 +5,7 @@ Il progetto consiste nell'implementare un componenete hardware capace di aumenta
 Il numero di colonne e il numero di righe, ciascuna di dimensione 8 bit, sono salvati rispettivamente al byte 0 e 1.<br>
 I pixel dell'immagine, ciascuno di 8 bit, sono salvati in memoria con indirizzamento al byte a partire dal byte 2.<br>
 I pixel equalizzati, anch'essi di 8 bit, vengono salvati in memoria a partire dal byte in posizione __2+(N_COL * N_ROW)__.<br>
-L'equalizzazione viene eseguita da una macchina a stati finiti che trova il valore di offset come 8-FLOOR(Log2(MAX_pixel - min_pixel), e esegue lo shift logico a sinistra (Current_pixel - min_pixel) << offset e considera come pixel equalizzato il minimo tra il valore calcolato e 255 (massimo valore di ogni pixel)<br>
+L'equalizzazione viene eseguita da una macchina a stati finiti che trova il valore di offset come __8-FLOOR(Log2(MAX_pixel - min_pixel)__, e esegue lo shift logico a sinistra __(Current_pixel - min_pixel) << offset__ e considera come pixel equalizzato il minimo tra il valore calcolato e 255 (massimo valore di ogni pixel)<br>
 <br>
 # TEST BENCH
 I test eseguiti sono stati volti a verificare il corretto funzionamento del componente nelle seguenti situazioni:<br>
