@@ -1,4 +1,4 @@
-Score:30/30L
+Score: 30/30L
 
 # PROVA FINALE PROGETTO DI RETI LOGICHE A.A. 2020/2021
 Il progetto consiste nell'implementare un componenete hardware capace di aumentare il contrasto di un immagine secondo [l'equalizzazione dell'istogramma](https://it.wikipedia.org/wiki/Equalizzazione_dell%27istogramma)<br>
